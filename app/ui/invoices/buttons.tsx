@@ -3,8 +3,6 @@ import Link from 'next/link';
 import { deleteInvoice } from '@/app/lib/actions';
 
 export function CreateInvoice({ id }: { id: string }) {
-  const deleteInvoiceWithId = deleteInvoice.bind(null, id);
-
   return (
     <Link
       href="/dashboard/invoices/create"
